@@ -1,0 +1,29 @@
+// This file were added as a supplement to RuneAudio application
+
+.title-marquee {
+    width: 125px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 2px;
+    > span, > strong {
+        white-space: nowrap;
+        transform: translate(0, 0);
+        animation: marquee 8s linear;
+    }
+    .title {
+        margin-right: 4px;
+    }
+}
+.no-marquee {
+    .title {
+        margin-right: 4px;
+    }
+}
+
+@keyframes marquee {
+    0% { transform: translate(0, 0); }
+    20% { transform: translate(0, 0); }
+    95% { transform: translate(-200%, 0); }
+    100% { transform: translate(-200%, 0); }
+}
